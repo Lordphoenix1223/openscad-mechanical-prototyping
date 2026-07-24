@@ -28,8 +28,8 @@ jobs:
               root / "docs" / "lessons-learned.md",
               root / "openscad" / "bench_mechanism_v3.scad",
               root / "openscad" / "bench_mechanism_v3_render_scene.scad",
-              root / "renders" / "final_preview_sheet.png",
-              root / "renders" / "cosmetic_shell_v2_1_preview_sheet.png",
+              root / "renders" / "final_preview_sheet.svg",
+              root / "renders" / "cosmetic_shell_v2_1_preview_sheet.svg",
           ]
           missing = [str(path) for path in required if not path.exists()]
           markdown_links = re.findall(r"\]\((\./[^)]+)\)", text)
