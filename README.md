@@ -39,7 +39,27 @@ If a design direction violates those rules, it is out.
 2. Review the constraints and lessons in `docs/` before changing geometry.
 3. Export only after checking clearances with separate fit coupons and a slicer preview.
 
-## Sample Artifacts
+## Evidence From The Current Iteration
+
+The public evidence is deliberately small: one overview, one assembly view, and one wrist-scale mockup.
+
+<p>
+  <img src="./renders/final_preview_sheet.png" alt="Overview sheet showing the current mechanism from multiple views" width="560">
+</p>
+
+<details>
+<summary>Inspect the assembly and intended form factor</summary>
+
+<p>
+  <img src="./renders/final_exploded_view.png" alt="Exploded view showing the mechanism's separated components" width="720">
+</p>
+
+<p>
+  <img src="./renders/final_solid_wrist_mockup.png" alt="Solid wrist mockup showing the intended wearable scale" width="720">
+</p>
+</details>
+
+Other available preview assets:
 
 The preview sheets are the fastest way to understand the current direction before opening OpenSCAD:
 
@@ -64,25 +84,11 @@ openscad-mechanical-prototyping/
 │   └── bench_mechanism_v3_render_scene.scad
 └── renders/
     ├── cosmetic_shell_v2_1_preview_sheet.svg
-    └── final_preview_sheet.svg
+    ├── final_exploded_view.png
+    ├── final_preview_sheet.png
+    ├── final_preview_sheet.svg
+    └── final_solid_wrist_mockup.png
 ```
-
-## What The AI Helped With
-
-AI was useful here, but not magical.
-
-- speeding up iteration notes after each geometry change
-- pressure-testing design choices before wasting prints
-- turning messy design states into explicit checklists
-- comparing prototype variants and calling out weak assumptions
-- documenting tolerance, mounting, and printability tradeoffs
-
-What AI did **not** do:
-
-- make the geometry correct by itself
-- replace slicer validation
-- replace fit coupons
-- replace physical testing
 
 ## Limitations
 
@@ -110,5 +116,5 @@ There is no trustworthy geometry test without OpenSCAD and a slicer. The repeata
 ## Quick Links
 
 - Constraints: [docs/constraints.md](./docs/constraints.md)
-- AI workflow: [docs/ai-workflow.md](./docs/ai-workflow.md)
+- Development note: [docs/ai-workflow.md](./docs/ai-workflow.md)
 - Lessons learned: [docs/lessons-learned.md](./docs/lessons-learned.md)
