@@ -41,6 +41,12 @@ If a design direction violates those rules, it is out.
 
 ## Sample Artifacts
 
+The preview sheets are the fastest way to understand the current direction before opening OpenSCAD:
+
+<p>
+  <img src="./renders/final_preview_sheet.svg" alt="Preview sheet for the bench mechanism prototype" width="720">
+</p>
+
 - [final_preview_sheet.svg](./renders/final_preview_sheet.svg)
 - [cosmetic_shell_v2_1_preview_sheet.svg](./renders/cosmetic_shell_v2_1_preview_sheet.svg)
 
@@ -83,6 +89,15 @@ What AI did **not** do:
 - The public source is intentionally limited to the bench-mechanism track.
 - The wearable-shell track is described here, but not fully published.
 - This repo documents prototyping work, not a finished product or a safety-certified mechanism.
+
+## Reproduce A Check
+
+There is no trustworthy geometry test without OpenSCAD and a slicer. The repeatable review loop is:
+
+1. Open the source with `part = 1`, `2`, or `3` selected.
+2. Render the selected part and export STL.
+3. Confirm manifold status, dimensions, and clearances in a slicer.
+4. Print the smallest fit coupon before printing the full mechanism.
 
 ## What I Learned
 
